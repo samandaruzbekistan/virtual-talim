@@ -24,6 +24,10 @@ class FrontController extends Controller
     public function show_lesson($id)
     {
         $lesson = Lesson::find($id);
-        return view('lesson', compact('lesson'));
+        $section = Section::find($lesson->section_id);
+        return view('lesson', [
+            'lesson' => $lesson,
+            'section' => $section
+        ]);
     }
 }

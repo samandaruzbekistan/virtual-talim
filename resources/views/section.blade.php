@@ -130,7 +130,7 @@
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="course-1-item">
                                 <figure class="thumnail">
-                                    <a href="course-single.html"><img src="{{ asset('images/course_6.jpg') }}"
+                                    <a href="{{ route('show_lesson', $lesson->id) }}"><img src="{{ asset('images/course_6.jpg') }}"
                                             alt="Image" class="img-fluid"></a>
                                     <div class="price">{{ $key + 1 }} dars</div>
                                     <div class="category">

@@ -51,7 +51,7 @@
                             Savolingiz bormi?</a>
                         <a href="#" class="small mr-3"><span class="icon-phone2 mr-2"></span>+998 94 911 33 22</a>
                         <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span>
-                            info@virtualtalim.uz</a>
+                            info@virtual-talim.uz</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <p class="mb-4">
-                            <img src="images/logo.png" alt="Logo" class="img-fluid">
+                            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid">
                         </p>
                         <p>Virtual taʼlim orqali informatika o'qituvchilarining kasbiy kompetensiyalarini
                             rivojlantirishga xizmat qiluvchi innovatsion platforma.</p>

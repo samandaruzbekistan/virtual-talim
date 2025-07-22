@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontController::class, 'index'])->name('index');
+Route::get('/section/{id}', [FrontController::class, 'show_section'])->name('show_section');
+Route::get('/lesson/{id}', [FrontController::class, 'show_lesson'])->name('show_lesson');

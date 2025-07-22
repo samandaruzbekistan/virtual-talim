@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lesson;
 use App\Models\Section;
 use Illuminate\Http\Request;
 
@@ -11,5 +12,18 @@ class FrontController extends Controller
     {
         $sections = Section::all();
         return view('index', compact('sections'));
+    }
+
+    public function show_section($id)
+    {
+        $section = Section::find($id);
+        $lessons = Lesson::where('section_id', $id)->get();
+        return view('section', compact('section', 'lessons'));
+    }
+
+    public function show_lesson($id)
+    {
+        $lesson = Lesson::find($id);
+        return view('lesson', compact('lesson'));
     }
 }
